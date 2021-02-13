@@ -20,3 +20,13 @@
 *.pdb
 Intermediate/*
 Saved/*
+.DS_Store
+Hyperloop/Intermediate/CachedAssetRegistry.bin
+Hyperloop/Intermediate/Shaders/tmp/92E24324274CFE078C5EF6997E8D9131/0/WorkerInputOnly.in
+Hyperloop/Intermediate/Shaders/tmp/92E24324274CFE078C5EF6997E8D9131/1/WorkerInputOnly.in
+Hyperloop/Intermediate/Shaders/tmp/92E24324274CFE078C5EF6997E8D9131/2/WorkerInputOnly.in
+Hyperloop/Saved/AutoScreenshot.png
+Hyperloop/Intermediate/CachedAssetRegistry.bin
+Hyperloop/Saved/AutoScreenshot.png
+*.bin
+*.png
