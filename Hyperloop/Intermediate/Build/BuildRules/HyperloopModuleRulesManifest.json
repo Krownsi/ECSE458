@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/Hyperloop/Hyperloop.Build.cs",
+		"/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/Hyperloop.Target.cs",
+		"/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/HyperloopEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.0"
+}

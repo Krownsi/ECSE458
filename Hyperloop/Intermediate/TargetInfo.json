@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Hyperloop",
+			"Path": "/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/Hyperloop.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "HyperloopEditor",
+			"Path": "/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/HyperloopEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
