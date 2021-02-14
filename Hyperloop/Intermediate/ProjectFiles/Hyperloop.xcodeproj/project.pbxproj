@@ -19,6 +19,8 @@
 		359F0E917F444C1933AEAA2F /* Hyperloop.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC64B272A07FE088EE2FF6 /* Hyperloop.h */; };
 		65F1FD848EF0F6D9BC3F8329 /* PodScripting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C083007A113BA3E9C1EDA39 /* PodScripting.cpp */; };
 		3002AABECAF400476F182C8D /* PodScripting.h in Sources */ = {isa = PBXBuildFile; fileRef = 47C78B42B7D072FB593A956A /* PodScripting.h */; };
+		6F783E7433F05A4617C3548C /* HL_Pod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45380EC83F3BBA04DCA3C0DA /* HL_Pod.cpp */; };
+		887787CBACDFE0F56C404E52 /* HL_Pod.h in Sources */ = {isa = PBXBuildFile; fileRef = B68B147FBEE5768372FEFC7E /* HL_Pod.h */; };
 		B598FEA846B56A21864682FE /* HyperloopEditor.Target.cs in Sources */ = {isa = PBXBuildFile; fileRef = 10E4841AB4578BB4EF66F8B7 /* HyperloopEditor.Target.cs */; };
 /* End PBXBuildFile section */
 
@@ -35,24 +37,27 @@
 		3BDC64B272A07FE088EE2FF6 /* Hyperloop.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "Hyperloop.h"; path = "../../Source/Hyperloop/Hyperloop.h"; sourceTree = SOURCE_ROOT; };
 		1C083007A113BA3E9C1EDA39 /* PodScripting.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "PodScripting.cpp"; path = "../../Source/Hyperloop/PodScripting.cpp"; sourceTree = SOURCE_ROOT; };
 		47C78B42B7D072FB593A956A /* PodScripting.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "PodScripting.h"; path = "../../Source/Hyperloop/PodScripting.h"; sourceTree = SOURCE_ROOT; };
+		45380EC83F3BBA04DCA3C0DA /* HL_Pod.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = "HL_Pod.cpp"; path = "../../Source/Hyperloop/Private/HL_Pod.cpp"; sourceTree = SOURCE_ROOT; };
+		B68B147FBEE5768372FEFC7E /* HL_Pod.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = "HL_Pod.h"; path = "../../Source/Hyperloop/Public/HL_Pod.h"; sourceTree = SOURCE_ROOT; };
 		10E4841AB4578BB4EF66F8B7 /* HyperloopEditor.Target.cs */ = {isa = PBXFileReference; explicitFileType = file.text; name = "HyperloopEditor.Target.cs"; path = "../../Source/HyperloopEditor.Target.cs"; sourceTree = SOURCE_ROOT; };
-		C2AABB1E80918DCCB764ECBC /* Hyperloop */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Hyperloop; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3EA013DEF794059707F645 /* Hyperloop */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Hyperloop; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A42CE3D7F1272033EBB1DDA9 = {
+		C72683322A6EE66DA7E16B18 = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2391C8B8C92B99B04CED2DED /* Hyperloop.cpp in Sources */,
 				65F1FD848EF0F6D9BC3F8329 /* PodScripting.cpp in Sources */,
+				6F783E7433F05A4617C3548C /* HL_Pod.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-	B7BEED822EF754BBB3378402 /* Embed App Extensions */ = {
+	6FB0C5F2EDC080A6E0A6629C /* Embed App Extensions */ = {
 		isa = PBXCopyFilesBuildPhase;
 		buildActionMask = 2147483647;
 		dstPath = "";
@@ -64,35 +69,35 @@
 	};
 /* End PBXCopyFilesBuildPhase section */
 /* Begin PBXContainerItemProxy section */
-		B68B147FBEE5768372FEFC7E /* PBXContainerItemProxy */ = {
+		23C274DBB2829A519E58152F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4A979F7AFC62416086981420 /* Project object */;
+			containerPortal = A42CE3D7F1272033EBB1DDA9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 698F9A37E35E1F05EABC12B4;
+			remoteGlobalIDString = 4A979F7AFC62416086981420;
 			remoteInfo = "Hyperloop_Build";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXTargetDependency section */
-		887787CBACDFE0F56C404E52 /* PBXTargetDependency */ = {
+		273A46F62C3D67897A080901 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 698F9A37E35E1F05EABC12B4 /* Hyperloop_Build */;
-			targetProxy = B68B147FBEE5768372FEFC7E /* PBXContainerItemProxy */;
+			target = 4A979F7AFC62416086981420 /* Hyperloop_Build */;
+			targetProxy = 23C274DBB2829A519E58152F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXGroup section */
-		9D53AB837303691CCB2F901B = {
+		6BD9B8706EF8C31D2910DE46 = {
 			isa = PBXGroup;
 			children = (
-				F9B14772C31F2E340A919CE6 /* Config */,
-				45D7CBE866EB1C2FAD3016E9 /* Source */,
+				B88538AC22AAD1C99B5E1A19 /* Config */,
+				1E9AAB1F54FBE896249013BE /* Source */,
 				F519DBC82B7C343B37F88500 /* Hyperloop.uproject */,
-				E21F543C16B4A9B22A7F299A /* Products */,
+				20922AA40E5C2F3142AB8458 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F9B14772C31F2E340A919CE6 = {
+		B88538AC22AAD1C99B5E1A19 = {
 			isa = PBXGroup;
 			children = (
 				9F1A6E3CBDFC1C4D72A426E5 /* DefaultEditor.ini */,
@@ -105,10 +110,10 @@
 			path = "/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Config";
 			sourceTree = "<absolute>";
 		};
-		45D7CBE866EB1C2FAD3016E9 = {
+		1E9AAB1F54FBE896249013BE = {
 			isa = PBXGroup;
 			children = (
-				58A9009388EA3DA1FDAEB23A /* Hyperloop */,
+				63AA566AC10835CAF856DB03 /* Hyperloop */,
 				CF746C0FF4BEC24D1E04EB4B /* Hyperloop.Target.cs */,
 				10E4841AB4578BB4EF66F8B7 /* HyperloopEditor.Target.cs */,
 			);
@@ -116,9 +121,11 @@
 			path = "/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source";
 			sourceTree = "<absolute>";
 		};
-		58A9009388EA3DA1FDAEB23A = {
+		63AA566AC10835CAF856DB03 = {
 			isa = PBXGroup;
 			children = (
+				B1917E53DDE99F768D6F533D /* Private */,
+				974EB9B9A51B8527727A4977 /* Public */,
 				CEB5DB1B3CB307131A430D54 /* Hyperloop.Build.cs */,
 				EC464E151695B41D5E4AD488 /* Hyperloop.cpp */,
 				3BDC64B272A07FE088EE2FF6 /* Hyperloop.h */,
@@ -129,10 +136,28 @@
 			path = "/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/Hyperloop";
 			sourceTree = "<absolute>";
 		};
-		E21F543C16B4A9B22A7F299A /* Products */ = {
+		B1917E53DDE99F768D6F533D = {
 			isa = PBXGroup;
 			children = (
-				C2AABB1E80918DCCB764ECBC /* Hyperloop */,
+				45380EC83F3BBA04DCA3C0DA /* HL_Pod.cpp */,
+			);
+			name = "Private";
+			path = "/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/Hyperloop/Private";
+			sourceTree = "<absolute>";
+		};
+		974EB9B9A51B8527727A4977 = {
+			isa = PBXGroup;
+			children = (
+				B68B147FBEE5768372FEFC7E /* HL_Pod.h */,
+			);
+			name = "Public";
+			path = "/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/Hyperloop/Public";
+			sourceTree = "<absolute>";
+		};
+		20922AA40E5C2F3142AB8458 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B3EA013DEF794059707F645 /* Hyperloop */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +165,10 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
-		698F9A37E35E1F05EABC12B4 /* Hyperloop_Build */ = {
+		4A979F7AFC62416086981420 /* Hyperloop_Build */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION) $(UE_BUILD_TARGET_NAME) $(PLATFORM_NAME) $(UE_BUILD_TARGET_CONFIG) \"/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Hyperloop.uproject\"";
-			buildConfigurationList = 273A46F62C3D67897A080901 /* Build configuration list for PBXLegacyTarget "Hyperloop_Build" */;
+			buildConfigurationList = EA44526722C015CF2517ABEE /* Build configuration list for PBXLegacyTarget "Hyperloop_Build" */;
 			buildPhases = (
 			);
 			buildToolPath = "/Users/Shared/Epic Games/UE_4.26/Engine/Build/BatchFiles/Mac/XcodeBuild.sh";
@@ -157,30 +182,30 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		6F783E7433F05A4617C3548C /* Hyperloop */ = {
+		C2AABB1E80918DCCB764ECBC /* Hyperloop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45380EC83F3BBA04DCA3C0DA /* Build configuration list for PBXNativeTarget "Hyperloop" */;
+			buildConfigurationList = 698F9A37E35E1F05EABC12B4 /* Build configuration list for PBXNativeTarget "Hyperloop" */;
 			buildPhases = (
-				B7BEED822EF754BBB3378402 /* Embed App Extensions */, 
-				6BD9B8706EF8C31D2910DE46 /* Shell Script */, 
+				6FB0C5F2EDC080A6E0A6629C /* Embed App Extensions */, 
+				CDB0AC570753BFC05460A847 /* Shell Script */, 
 			);
 			dependencies = (
-				887787CBACDFE0F56C404E52 /* PBXTargetDependency */,
+				273A46F62C3D67897A080901 /* PBXTargetDependency */,
 			);
 			name = "Hyperloop";
 			passBuildSettingsInEnvironment = 1;
 			productName = "Hyperloop";
-			productReference = "C2AABB1E80918DCCB764ECBC";
+			productReference = "4B3EA013DEF794059707F645";
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXNativeTarget section */
-		23C274DBB2829A519E58152F /* Hyperloop_Index */ = {
+		9D53AB837303691CCB2F901B /* Hyperloop_Index */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B3EA013DEF794059707F645 /* Build configuration list for PBXNativeTarget "Hyperloop_Index" */;
+			buildConfigurationList = E21F543C16B4A9B22A7F299A /* Build configuration list for PBXNativeTarget "Hyperloop_Index" */;
 			buildPhases = (
-				A42CE3D7F1272033EBB1DDA9 /* Sources */,
+				C72683322A6EE66DA7E16B18 /* Sources */,
 			);
 			dependencies = (
 			);
@@ -192,38 +217,38 @@
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4A979F7AFC62416086981420 /* Project object */ = {
+		A42CE3D7F1272033EBB1DDA9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 2000;
 				ORGANIZATIONNAME = "Epic Games, Inc.";
 				TargetAttributes = {
-					6F783E7433F05A4617C3548C = {
+					C2AABB1E80918DCCB764ECBC = {
 						ProvisioningStyle = Manual;
 					};
 				};
 			};
-			buildConfigurationList = EA44526722C015CF2517ABEE /* Build configuration list for PBXProject "Hyperloop" */;
+			buildConfigurationList = B7BEED822EF754BBB3378402 /* Build configuration list for PBXProject "Hyperloop" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en
 			);
-			mainGroup = 9D53AB837303691CCB2F901B;
-			productRefGroup = E21F543C16B4A9B22A7F299A;
+			mainGroup = 6BD9B8706EF8C31D2910DE46;
+			productRefGroup = 20922AA40E5C2F3142AB8458;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-			6F783E7433F05A4617C3548C /* Hyperloop */,
-			698F9A37E35E1F05EABC12B4 /* Hyperloop_Build */,
-			23C274DBB2829A519E58152F /* Hyperloop_Index */,
+			C2AABB1E80918DCCB764ECBC /* Hyperloop */,
+			4A979F7AFC62416086981420 /* Hyperloop_Build */,
+			9D53AB837303691CCB2F901B /* Hyperloop_Index */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		20922AA40E5C2F3142AB8458 /* "DebugGame" */ = {
+		7591F2BA2A709E3E2612345D /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -257,6 +282,7 @@
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source\"",
+					"../../Source/Hyperloop/Private",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Intermediate/Build/Mac/UE4Editor/Inc/Engine\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes\"",
@@ -496,6 +522,7 @@
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Public\"",
 					"../Build/Mac/UE4Editor/Inc/Hyperloop",
 					"../../Source",
+					"../../Source/Hyperloop/Public",
 				);
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -505,7 +532,7 @@
 			};
 			name = "DebugGame";
 		};
-		7591F2BA2A709E3E2612345D /* "DebugGame Editor" */ = {
+		0F3D9576E786838D2C79F89A /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -539,6 +566,7 @@
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source\"",
+					"../../Source/Hyperloop/Private",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Intermediate/Build/Mac/UE4Editor/Inc/Engine\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes\"",
@@ -778,6 +806,7 @@
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Public\"",
 					"../Build/Mac/UE4Editor/Inc/Hyperloop",
 					"../../Source",
+					"../../Source/Hyperloop/Public",
 				);
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -787,7 +816,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		0F3D9576E786838D2C79F89A /* "Development" */ = {
+		06F96C56F9A70A27893015DE /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -821,6 +850,7 @@
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source\"",
+					"../../Source/Hyperloop/Private",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Intermediate/Build/Mac/UE4Editor/Inc/Engine\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes\"",
@@ -1060,6 +1090,7 @@
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Public\"",
 					"../Build/Mac/UE4Editor/Inc/Hyperloop",
 					"../../Source",
+					"../../Source/Hyperloop/Public",
 				);
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -1069,7 +1100,7 @@
 			};
 			name = "Development";
 		};
-		06F96C56F9A70A27893015DE /* "Development Editor" */ = {
+		D3ADD94616F9B7CC926C5825 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1103,6 +1134,7 @@
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source\"",
+					"../../Source/Hyperloop/Private",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Intermediate/Build/Mac/UE4Editor/Inc/Engine\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes\"",
@@ -1342,6 +1374,7 @@
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Public\"",
 					"../Build/Mac/UE4Editor/Inc/Hyperloop",
 					"../../Source",
+					"../../Source/Hyperloop/Public",
 				);
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -1351,7 +1384,7 @@
 			};
 			name = "Development Editor";
 		};
-		D3ADD94616F9B7CC926C5825 /* "Shipping" */ = {
+		AF314CA30C07CD3069053A72 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1385,6 +1418,7 @@
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source\"",
+					"../../Source/Hyperloop/Private",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Intermediate/Build/Mac/UE4Editor/Inc/Engine\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime\"",
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes\"",
@@ -1624,6 +1658,7 @@
 					"\"/Users/Shared/Epic Games/UE_4.26/Engine/Source/Runtime/ClothingSystemRuntimeInterface/Public\"",
 					"../Build/Mac/UE4Editor/Inc/Hyperloop",
 					"../../Source",
+					"../../Source/Hyperloop/Public",
 				);
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -1633,7 +1668,7 @@
 			};
 			name = "Shipping";
 		};
-		C72683322A6EE66DA7E16B18 /* "DebugGame" */ = {
+		963D44822ADD7821C3E76579 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1660,7 +1695,7 @@
 			};
 			name = "DebugGame";
 		};
-		963D44822ADD7821C3E76579 /* "DebugGame Editor" */ = {
+		094A1D7C4E255518BFE8B465 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -1676,7 +1711,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		094A1D7C4E255518BFE8B465 /* "Development" */ = {
+		6BE31B817B85CB6C05396700 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1703,7 +1738,7 @@
 			};
 			name = "Development";
 		};
-		6BE31B817B85CB6C05396700 /* "Development Editor" */ = {
+		893A6E2897953C0E49A344D3 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -1719,7 +1754,7 @@
 			};
 			name = "Development Editor";
 		};
-		893A6E2897953C0E49A344D3 /* "Shipping" */ = {
+		1FD0EC0FA3A267823E63A045 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1746,7 +1781,7 @@
 			};
 			name = "Shipping";
 		};
-		6FB0C5F2EDC080A6E0A6629C /* "DebugGame" */ = {
+		C18F665421AAC40F087E7D5B /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1759,7 +1794,7 @@
 			};
 			name = "DebugGame";
 		};
-		C18F665421AAC40F087E7D5B /* "DebugGame Editor" */ = {
+		61081AA071AAFD73CF9C45E3 /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -1772,7 +1807,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		61081AA071AAFD73CF9C45E3 /* "Development" */ = {
+		FED31ECFB860987FA25D9978 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1785,7 +1820,7 @@
 			};
 			name = "Development";
 		};
-		FED31ECFB860987FA25D9978 /* "Development Editor" */ = {
+		0BA3D9E7DF82C8B5BD07FC0A /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -1798,7 +1833,7 @@
 			};
 			name = "Development Editor";
 		};
-		0BA3D9E7DF82C8B5BD07FC0A /* "Shipping" */ = {
+		2B93687CBD7284B7048037AD /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1811,7 +1846,7 @@
 			};
 			name = "Shipping";
 		};
-		CDB0AC570753BFC05460A847 /* "DebugGame" */ = {
+		CDC57C6F072375BA7B4EC0C9 /* "DebugGame" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1838,7 +1873,7 @@
 			};
 			name = "DebugGame";
 		};
-		CDC57C6F072375BA7B4EC0C9 /* "DebugGame Editor" */ = {
+		144D2781FAEF2F54CCE166BC /* "DebugGame Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -1854,7 +1889,7 @@
 			};
 			name = "DebugGame Editor";
 		};
-		144D2781FAEF2F54CCE166BC /* "Development" */ = {
+		3DA77927921E5AE438481516 /* "Development" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1881,7 +1916,7 @@
 			};
 			name = "Development";
 		};
-		3DA77927921E5AE438481516 /* "Development Editor" */ = {
+		875169A9A6CDE6D14F549E58 /* "Development Editor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64";
@@ -1897,7 +1932,7 @@
 			};
 			name = "Development Editor";
 		};
-		875169A9A6CDE6D14F549E58 /* "Shipping" */ = {
+		3625A9B63ACBA08117F689D6 /* "Shipping" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				VALID_ARCHS = "x86_64 arm64";
@@ -1927,57 +1962,57 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA44526722C015CF2517ABEE /* Build configuration list for PBXProject "Hyperloop" */ = {
+		B7BEED822EF754BBB3378402 /* Build configuration list for PBXProject "Hyperloop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20922AA40E5C2F3142AB8458 /* "DebugGame" */,
-				7591F2BA2A709E3E2612345D /* "DebugGame Editor" */,
-				0F3D9576E786838D2C79F89A /* "Development" */,
-				06F96C56F9A70A27893015DE /* "Development Editor" */,
-				D3ADD94616F9B7CC926C5825 /* "Shipping" */,
+				7591F2BA2A709E3E2612345D /* "DebugGame" */,
+				0F3D9576E786838D2C79F89A /* "DebugGame Editor" */,
+				06F96C56F9A70A27893015DE /* "Development" */,
+				D3ADD94616F9B7CC926C5825 /* "Development Editor" */,
+				AF314CA30C07CD3069053A72 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		273A46F62C3D67897A080901 /* Build configuration list for PBXLegacyTarget "Hyperloop_Build" */ = {
+		EA44526722C015CF2517ABEE /* Build configuration list for PBXLegacyTarget "Hyperloop_Build" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6FB0C5F2EDC080A6E0A6629C /* "DebugGame" */,
-				C18F665421AAC40F087E7D5B /* "DebugGame Editor" */,
-				61081AA071AAFD73CF9C45E3 /* "Development" */,
-				FED31ECFB860987FA25D9978 /* "Development Editor" */,
-				0BA3D9E7DF82C8B5BD07FC0A /* "Shipping" */,
+				C18F665421AAC40F087E7D5B /* "DebugGame" */,
+				61081AA071AAFD73CF9C45E3 /* "DebugGame Editor" */,
+				FED31ECFB860987FA25D9978 /* "Development" */,
+				0BA3D9E7DF82C8B5BD07FC0A /* "Development Editor" */,
+				2B93687CBD7284B7048037AD /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		45380EC83F3BBA04DCA3C0DA /* Build configuration list for PBXNativeTarget "Hyperloop" */ = {
+		698F9A37E35E1F05EABC12B4 /* Build configuration list for PBXNativeTarget "Hyperloop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C72683322A6EE66DA7E16B18 /* "DebugGame" */,
-				963D44822ADD7821C3E76579 /* "DebugGame Editor" */,
-				094A1D7C4E255518BFE8B465 /* "Development" */,
-				6BE31B817B85CB6C05396700 /* "Development Editor" */,
-				893A6E2897953C0E49A344D3 /* "Shipping" */,
+				963D44822ADD7821C3E76579 /* "DebugGame" */,
+				094A1D7C4E255518BFE8B465 /* "DebugGame Editor" */,
+				6BE31B817B85CB6C05396700 /* "Development" */,
+				893A6E2897953C0E49A344D3 /* "Development Editor" */,
+				1FD0EC0FA3A267823E63A045 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		4B3EA013DEF794059707F645 /* Build configuration list for PBXNativeTarget "Hyperloop_Index" */ = {
+		E21F543C16B4A9B22A7F299A /* Build configuration list for PBXNativeTarget "Hyperloop_Index" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDB0AC570753BFC05460A847 /* "DebugGame" */,
-				CDC57C6F072375BA7B4EC0C9 /* "DebugGame Editor" */,
-				144D2781FAEF2F54CCE166BC /* "Development" */,
-				3DA77927921E5AE438481516 /* "Development Editor" */,
-				875169A9A6CDE6D14F549E58 /* "Shipping" */,
+				CDC57C6F072375BA7B4EC0C9 /* "DebugGame" */,
+				144D2781FAEF2F54CCE166BC /* "DebugGame Editor" */,
+				3DA77927921E5AE438481516 /* "Development" */,
+				875169A9A6CDE6D14F549E58 /* "Development Editor" */,
+				3625A9B63ACBA08117F689D6 /* "Shipping" */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 /* Begin PBXShellScriptBuildPhase section */
-		6BD9B8706EF8C31D2910DE46 /* Sign Frameworks */ = {
+		CDB0AC570753BFC05460A847 /* Sign Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1993,5 +2028,5 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 	};
-	rootObject = 4A979F7AFC62416086981420 /* Project object */;
+	rootObject = A42CE3D7F1272033EBB1DDA9 /* Project object */;
 }

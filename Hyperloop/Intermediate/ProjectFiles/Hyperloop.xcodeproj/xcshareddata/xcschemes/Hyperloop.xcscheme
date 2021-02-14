@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F783E7433F05A4617C3548C"
+               BlueprintIdentifier = "C2AABB1E80918DCCB764ECBC"
                BuildableName = "Hyperloop.app"
                BlueprintName = "Hyperloop"
                ReferencedContainer = "container:Hyperloop.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F783E7433F05A4617C3548C"
+               BlueprintIdentifier = "C2AABB1E80918DCCB764ECBC"
                BuildableName = "Hyperloop.app"
                BlueprintName = "Hyperloop"
                ReferencedContainer = "container:Hyperloop.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F783E7433F05A4617C3548C"
+               BlueprintIdentifier = "C2AABB1E80918DCCB764ECBC"
                BuildableName = "Hyperloop.app"
                BlueprintName = "Hyperloop"
                ReferencedContainer = "container:Hyperloop.xcodeproj">
@@ -70,8 +70,7 @@
             argument = "-RunConfig=$(Configuration)"
             isEnabled = "YES">
          </CommandLineArgument>
-      </CommandLineArguments>
-      <AdditionalOptions>
+      </CommandLineArguments>      <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -84,7 +83,7 @@
          runnableDebuggingMode = "0">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F783E7433F05A4617C3548C"
+               BlueprintIdentifier = "C2AABB1E80918DCCB764ECBC"
                BuildableName = "Hyperloop.app"
                BlueprintName = "Hyperloop"
                ReferencedContainer = "container:Hyperloop.xcodeproj">
