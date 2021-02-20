@@ -27,4 +27,10 @@ public:
     UFUNCTION(BlueprintCallable)
     float CalculateForce(float force);
     
+private:
+    float CalculateFrictionForce(bool stationary);
+    float CalculateAirResistance(float speed);
+    float GetNewVelocity(float acceleration);
+    float ConvertToCmS(float speed);
+    float GetAccelerationFromForce(float force);
 };
