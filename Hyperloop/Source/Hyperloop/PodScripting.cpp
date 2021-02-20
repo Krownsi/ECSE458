@@ -6,32 +6,41 @@
 
 using namespace std;
 
+float _speed;
+float _power;
+float _tilt;
+float _force;
+
 // Sets default values for this component's properties
 UPodScripting::UPodScripting()
 {
-    // Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-    // off to improve performance if you don't need them.
     PrimaryComponentTick.bCanEverTick = true;
-
-    // ...
 }
 
 float UPodScripting::CalculateSpeed(float speed)
 {
-    return speed/5;
+    _speed = speed;
+    
+    return speed/4;
 }
 
 float UPodScripting::CalculatePower(float power)
 {
+    _power = power;
+    
     return power;
 }
 
 float UPodScripting::CalculateTilt(float tilt)
 {
+    _tilt = tilt;
+    
     return tilt;
 }
 
 float UPodScripting::CalculateForce(float force)
 {
+    _force = force;
+    
     return force;
 }
