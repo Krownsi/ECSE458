@@ -13,10 +13,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define HYPERLOOP_PodScripting_generated_h
 
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_SPARSE_DATA
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_RPC_WRAPPERS
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_INCLASS_NO_PURE_DECLS \
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_SPARSE_DATA
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCalculateForce); \
+	DECLARE_FUNCTION(execCalculateTilt); \
+	DECLARE_FUNCTION(execCalculatePower); \
+	DECLARE_FUNCTION(execCalculateSpeed);
+
+
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCalculateForce); \
+	DECLARE_FUNCTION(execCalculateTilt); \
+	DECLARE_FUNCTION(execCalculatePower); \
+	DECLARE_FUNCTION(execCalculateSpeed);
+
+
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPodScripting(); \
 	friend struct Z_Construct_UClass_UPodScripting_Statics; \
@@ -25,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UPodScripting)
 
 
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_INCLASS \
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesUPodScripting(); \
 	friend struct Z_Construct_UClass_UPodScripting_Statics; \
@@ -34,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(UPodScripting)
 
 
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_STANDARD_CONSTRUCTORS \
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPodScripting(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPodScripting) \
@@ -47,7 +61,7 @@ private: \
 public:
 
 
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_ENHANCED_CONSTRUCTORS \
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UPodScripting(UPodScripting&&); \
@@ -58,28 +72,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPodScripting); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UPodScripting)
 
 
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_PRIVATE_PROPERTY_OFFSET
-#define Hyperloop_Source_Hyperloop_PodScripting_h_10_PROLOG
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_GENERATED_BODY_LEGACY \
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_PRIVATE_PROPERTY_OFFSET
+#define Hyperloop_Source_Hyperloop_PodScripting_h_9_PROLOG
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_PRIVATE_PROPERTY_OFFSET \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_SPARSE_DATA \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_RPC_WRAPPERS \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_INCLASS \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_STANDARD_CONSTRUCTORS \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_PRIVATE_PROPERTY_OFFSET \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_SPARSE_DATA \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_RPC_WRAPPERS \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_INCLASS \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Hyperloop_Source_Hyperloop_PodScripting_h_13_GENERATED_BODY \
+#define Hyperloop_Source_Hyperloop_PodScripting_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_PRIVATE_PROPERTY_OFFSET \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_SPARSE_DATA \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_INCLASS_NO_PURE_DECLS \
-	Hyperloop_Source_Hyperloop_PodScripting_h_13_ENHANCED_CONSTRUCTORS \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_PRIVATE_PROPERTY_OFFSET \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_SPARSE_DATA \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_INCLASS_NO_PURE_DECLS \
+	Hyperloop_Source_Hyperloop_PodScripting_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

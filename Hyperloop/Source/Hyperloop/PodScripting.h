@@ -1,4 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -10,19 +9,22 @@
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class HYPERLOOP_API UPodScripting : public UActorComponent
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
-	UPodScripting();
+public:
+    // Sets default values for this component's properties
+    UPodScripting();
+    
+    UFUNCTION(BlueprintCallable)
+    float CalculateSpeed(float speed);
 
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
+    UFUNCTION(BlueprintCallable)
+    float CalculatePower(float power);
 
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+    UFUNCTION(BlueprintCallable)
+    float CalculateTilt(float tilt);
 
-		
+    UFUNCTION(BlueprintCallable)
+    float CalculateForce(float force);
+    
 };

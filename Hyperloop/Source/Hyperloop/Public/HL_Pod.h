@@ -15,21 +15,18 @@ public:
 	// Sets default values for this pawn's properties
 	AHL_Pod();
     
-    // Called every frame
-    virtual void Tick(float DeltaTime) override;
-
-    // Called to bind functionality to input
-    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+    UFUNCTION(BlueprintCallable)
+    int32 SimpleExposedFunction(int32 speed);
 
 protected:
 	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	//virtual void BeginPlay() override;
     
     // Static mesh is visible everywhere
-    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Setup");
+    //UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Setup");
     
     // Garbage collectiona auto setup
-    UStaticMeshComponent* Pod;
+    //UStaticMeshComponent* Pod;
     
     
 };

@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define HYPERLOOP_HL_Pod_generated_h
 
 #define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_SPARSE_DATA
-#define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_RPC_WRAPPERS
-#define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSimpleExposedFunction);
+
+
+#define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSimpleExposedFunction);
+
+
 #define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAHL_Pod(); \
@@ -58,10 +66,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AHL_Pod); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AHL_Pod)
 
 
-#define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__Pod() { return STRUCT_OFFSET(AHL_Pod, Pod); }
-
-
+#define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_PRIVATE_PROPERTY_OFFSET
 #define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_9_PROLOG
 #define Hyperloop_Source_Hyperloop_Public_HL_Pod_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

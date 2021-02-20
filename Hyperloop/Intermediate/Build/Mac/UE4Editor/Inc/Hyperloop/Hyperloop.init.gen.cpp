@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeHyperloop_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x9FB3731C,
+				0x755B066F,
 				0xA378F3C4,
 				METADATA_PARAMS(nullptr, 0)
 			};
