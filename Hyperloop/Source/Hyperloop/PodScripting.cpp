@@ -8,7 +8,7 @@
 using namespace std;
 
 // m/s^2
-float _default_accel = 30.0;
+float _default_accel = 60.0;
 
 // m/s^2
 float _gravity = 9.81;
@@ -36,7 +36,7 @@ UPodScripting::UPodScripting()
 }
 
 // Speed is in cm/seconds
-float UPodScripting::CalculateSpeed(float speed)
+float UPodScripting::CalculateSpeed()
 {
     float new_acceleration = _default_accel;
     
@@ -48,26 +48,29 @@ float UPodScripting::CalculateSpeed(float speed)
     return ConvertToCmS(_speed);
 }
 
-float UPodScripting::CalculatePower(float power)
+float UPodScripting::CalculateBrake()
 {
-    _power = power;
+    _speed -= 10.0;
     
-    return power;
+    return ConvertToCmS(_speed);
 }
 
-float UPodScripting::CalculateTilt(float tilt)
+float UPodScripting::CalculatePower()
 {
-    _tilt = tilt;
-    
-    return tilt;
+    return _power;
 }
 
-float UPodScripting::CalculateForce(float force)
+float UPodScripting::CalculateTilt()
 {
-    _force = force;
-    
-    return force;
+    return _tilt;
 }
+
+float UPodScripting::CalculateForce()
+{
+    return _force;
+}
+
+/** HELPERS ***/
 
 float UPodScripting::GetNewVelocity(float acceleration)
 {

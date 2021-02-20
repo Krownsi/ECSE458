@@ -19,6 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execCalculateForce); \
 	DECLARE_FUNCTION(execCalculateTilt); \
 	DECLARE_FUNCTION(execCalculatePower); \
+	DECLARE_FUNCTION(execCalculateBrake); \
 	DECLARE_FUNCTION(execCalculateSpeed);
 
 
@@ -27,6 +28,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	DECLARE_FUNCTION(execCalculateForce); \
 	DECLARE_FUNCTION(execCalculateTilt); \
 	DECLARE_FUNCTION(execCalculatePower); \
+	DECLARE_FUNCTION(execCalculateBrake); \
 	DECLARE_FUNCTION(execCalculateSpeed);
 
 

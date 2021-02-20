@@ -16,16 +16,19 @@ public:
     UPodScripting();
     
     UFUNCTION(BlueprintCallable)
-    float CalculateSpeed(float speed);
+    float CalculateSpeed();
+    
+    UFUNCTION(BlueprintCallable)
+    float CalculateBrake();
 
     UFUNCTION(BlueprintCallable)
-    float CalculatePower(float power);
+    float CalculatePower();
 
     UFUNCTION(BlueprintCallable)
-    float CalculateTilt(float tilt);
+    float CalculateTilt();
 
     UFUNCTION(BlueprintCallable)
-    float CalculateForce(float force);
+    float CalculateForce();
     
 private:
     float CalculateFrictionForce(bool stationary);

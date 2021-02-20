@@ -1,4 +1,4 @@
-/Users/alexander/Documents/Coding/ECSE458/Hyperloop/Intermediate/Build/Mac/UE4Editor/Development/Hyperloop/HL_Pod.cpp.o: \
+/Users/seantan/Code/ECSE458/Hyperloop/Intermediate/Build/Mac/UE4Editor/Development/Hyperloop/HL_Pod.cpp.o: \
   /Users/Shared/Epic\ Games/UE_4.26/Engine/Source/Runtime/Engine/Public/TextureLayout.h \
   /Users/Shared/Epic\ Games/UE_4.26/Engine/Source/Runtime/Engine/Public/TextureLayout3d.h \
   /Users/Shared/Epic\ Games/UE_4.26/Engine/Intermediate/Build/Mac/UE4Editor/Inc/Engine/SoundWave.generated.h \
@@ -1275,7 +1275,7 @@
   /Users/Shared/Epic\ Games/UE_4.26/Engine/Source/Runtime/Core/Public/CoreTypes.h \
   /Users/Shared/Epic\ Games/UE_4.26/Engine/Source/Runtime/Core/Public/Containers/ContainersFwd.h \
   /Users/Shared/Epic\ Games/UE_4.26/Engine/Source/Runtime/Engine/Public/EngineSharedPCH.h \
-  /Users/alexander/Documents/Coding/ECSE458/Hyperloop/Intermediate/Build/Mac/HyperloopEditor/Development/Engine/SharedPCH.Engine.ShadowErrors.h \
+  /Users/seantan/Code/ECSE458/Hyperloop/Intermediate/Build/Mac/HyperloopEditor/Development/Engine/SharedPCH.Engine.ShadowErrors.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include/stddef.h \
@@ -2602,7 +2602,7 @@
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/typeinfo \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/atomic \
-  /Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/Hyperloop/Private/HL_Pod.cpp \
-  /Users/alexander/Documents/Coding/ECSE458/Hyperloop/Intermediate/Build/Mac/UE4Editor/Development/Hyperloop/Definitions.Hyperloop.h \
-  /Users/alexander/Documents/Coding/ECSE458/Hyperloop/Source/Hyperloop/Public/HL_Pod.h \
-  /Users/alexander/Documents/Coding/ECSE458/Hyperloop/Intermediate/Build/Mac/UE4Editor/Inc/Hyperloop/HL_Pod.generated.h
+  /Users/seantan/Code/ECSE458/Hyperloop/Source/Hyperloop/Private/HL_Pod.cpp \
+  /Users/seantan/Code/ECSE458/Hyperloop/Intermediate/Build/Mac/UE4Editor/Development/Hyperloop/Definitions.Hyperloop.h \
+  /Users/seantan/Code/ECSE458/Hyperloop/Source/Hyperloop/Public/HL_Pod.h \
+  /Users/seantan/Code/ECSE458/Hyperloop/Intermediate/Build/Mac/UE4Editor/Inc/Hyperloop/HL_Pod.generated.h

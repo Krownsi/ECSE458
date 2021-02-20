@@ -20,40 +20,44 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 // End Cross Module References
 	DEFINE_FUNCTION(UPodScripting::execCalculateForce)
 	{
-		P_GET_PROPERTY(FFloatProperty,Z_Param_force);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->CalculateForce(Z_Param_force);
+		*(float*)Z_Param__Result=P_THIS->CalculateForce();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UPodScripting::execCalculateTilt)
 	{
-		P_GET_PROPERTY(FFloatProperty,Z_Param_tilt);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->CalculateTilt(Z_Param_tilt);
+		*(float*)Z_Param__Result=P_THIS->CalculateTilt();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UPodScripting::execCalculatePower)
 	{
-		P_GET_PROPERTY(FFloatProperty,Z_Param_power);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->CalculatePower(Z_Param_power);
+		*(float*)Z_Param__Result=P_THIS->CalculatePower();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UPodScripting::execCalculateBrake)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(float*)Z_Param__Result=P_THIS->CalculateBrake();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(UPodScripting::execCalculateSpeed)
 	{
-		P_GET_PROPERTY(FFloatProperty,Z_Param_speed);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->CalculateSpeed(Z_Param_speed);
+		*(float*)Z_Param__Result=P_THIS->CalculateSpeed();
 		P_NATIVE_END;
 	}
 	void UPodScripting::StaticRegisterNativesUPodScripting()
 	{
 		UClass* Class = UPodScripting::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "CalculateBrake", &UPodScripting::execCalculateBrake },
 			{ "CalculateForce", &UPodScripting::execCalculateForce },
 			{ "CalculatePower", &UPodScripting::execCalculatePower },
 			{ "CalculateSpeed", &UPodScripting::execCalculateSpeed },
@@ -61,14 +65,12 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_UPodScripting_CalculateForce_Statics
+	struct Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics
 	{
-		struct PodScripting_eventCalculateForce_Parms
+		struct PodScripting_eventCalculateBrake_Parms
 		{
-			float force;
 			float ReturnValue;
 		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_force;
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -76,10 +78,40 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculateForce_Statics::NewProp_force = { "force", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculateForce_Parms, force), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculateBrake_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PodScripting.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPodScripting, nullptr, "CalculateBrake", nullptr, nullptr, sizeof(PodScripting_eventCalculateBrake_Parms), Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPodScripting_CalculateBrake()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPodScripting_CalculateBrake_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPodScripting_CalculateForce_Statics
+	{
+		struct PodScripting_eventCalculateForce_Parms
+		{
+			float ReturnValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculateForce_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculateForce_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPodScripting_CalculateForce_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculateForce_Statics::NewProp_force,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculateForce_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
@@ -101,10 +133,8 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 	{
 		struct PodScripting_eventCalculatePower_Parms
 		{
-			float power;
 			float ReturnValue;
 		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_power;
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -112,10 +142,8 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculatePower_Statics::NewProp_power = { "power", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculatePower_Parms, power), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculatePower_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculatePower_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPodScripting_CalculatePower_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculatePower_Statics::NewProp_power,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculatePower_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
@@ -137,10 +165,8 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 	{
 		struct PodScripting_eventCalculateSpeed_Parms
 		{
-			float speed;
 			float ReturnValue;
 		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_speed;
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -148,10 +174,8 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculateSpeed_Statics::NewProp_speed = { "speed", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculateSpeed_Parms, speed), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculateSpeed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculateSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPodScripting_CalculateSpeed_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculateSpeed_Statics::NewProp_speed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculateSpeed_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
@@ -173,10 +197,8 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 	{
 		struct PodScripting_eventCalculateTilt_Parms
 		{
-			float tilt;
 			float ReturnValue;
 		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_tilt;
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -184,10 +206,8 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculateTilt_Statics::NewProp_tilt = { "tilt", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculateTilt_Parms, tilt), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UPodScripting_CalculateTilt_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PodScripting_eventCalculateTilt_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPodScripting_CalculateTilt_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculateTilt_Statics::NewProp_tilt,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPodScripting_CalculateTilt_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
@@ -224,10 +244,11 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Hyperloop,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPodScripting_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UPodScripting_CalculateForce, "CalculateForce" }, // 2014733330
-		{ &Z_Construct_UFunction_UPodScripting_CalculatePower, "CalculatePower" }, // 3619230752
-		{ &Z_Construct_UFunction_UPodScripting_CalculateSpeed, "CalculateSpeed" }, // 2958394481
-		{ &Z_Construct_UFunction_UPodScripting_CalculateTilt, "CalculateTilt" }, // 64234426
+		{ &Z_Construct_UFunction_UPodScripting_CalculateBrake, "CalculateBrake" }, // 2385272668
+		{ &Z_Construct_UFunction_UPodScripting_CalculateForce, "CalculateForce" }, // 2478208984
+		{ &Z_Construct_UFunction_UPodScripting_CalculatePower, "CalculatePower" }, // 3588151511
+		{ &Z_Construct_UFunction_UPodScripting_CalculateSpeed, "CalculateSpeed" }, // 992186806
+		{ &Z_Construct_UFunction_UPodScripting_CalculateTilt, "CalculateTilt" }, // 860155333
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPodScripting_Statics::Class_MetaDataParams[] = {
@@ -264,7 +285,7 @@ void EmptyLinkFunctionForGeneratedCodePodScripting() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPodScripting, 2342982144);
+	IMPLEMENT_CLASS(UPodScripting, 1422252792);
 	template<> HYPERLOOP_API UClass* StaticClass<UPodScripting>()
 	{
 		return UPodScripting::StaticClass();
