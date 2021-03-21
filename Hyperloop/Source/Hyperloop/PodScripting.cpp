@@ -8,7 +8,7 @@
 using namespace std;
 
 // m/s^2
-float _default_accel = 60.0;
+float _default_accel = 200.0;
 
 // m/s^2
 float _gravity = 9.81;
@@ -23,7 +23,7 @@ float _static_friction_coeff = 0.4;
 float _kinetic_friction_coeff = 0.2;
 
 // m/s
-float _speed = 0;
+float _speed;
 float _power;
 float _tilt;
 float _force;
@@ -40,19 +40,28 @@ float UPodScripting::CalculateSpeed()
 {
     float new_acceleration = _default_accel;
     
-    new_acceleration -= _speed == 0 ? GetAccelerationFromForce(CalculateFrictionForce(true)) : GetAccelerationFromForce(CalculateFrictionForce(false));
+    float prevSpeed = _speed;
+    
+//    new_acceleration -= _speed == 0 ? GetAccelerationFromForce(CalculateFrictionForce(true)) : GetAccelerationFromForce(CalculateFrictionForce(false));
     //new_acceleration -= GetAccelerationFromForce(CalculateAirResistance(_speed));
     
     _speed = GetNewVelocity(new_acceleration);
     
-    return ConvertToCmS(_speed);
+    return ConvertToCmS(_speed - prevSpeed);
 }
 
 float UPodScripting::CalculateBrake()
 {
+    
+    float prevSpeed = _speed;
+    
     _speed -= 10.0;
     
-    return ConvertToCmS(_speed);
+    if(_speed < 0) {
+        _speed = 0;
+    }
+        
+    return ConvertToCmS(_speed - prevSpeed);
 }
 
 float UPodScripting::CalculatePower()
@@ -99,4 +108,13 @@ float UPodScripting::GetAccelerationFromForce(float force)
     return force / _mass;
 }
 
+// braking decelleration function
+// power from thrusters
+// power from braking
+// thermodynamics of batteries
+// cooling mechanism
+// battery efficiency vs. thermal
+// angle of camera when acceleration + deaccelerating
+// g-force in pod
+// crashing conditions: too fast, overheating, g-force
 
